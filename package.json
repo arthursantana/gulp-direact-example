@@ -1,0 +1,20 @@
+{
+  "name": "gulp-direact-example",
+  "version": "1.0.0",
+  "description": "Example for gulp-direact.",
+  "main": "index.html",
+  "author": "Arthur Santana <rockslave@gmail.com>",
+  "license": "MIT",
+  "repository" : {
+     "type" : "git",
+     "url" : "https://github.com/arthursantana/gulp-direact-example.git"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-direact": "^0.0.3",
+    "gulp-html-replace": "^1.4.4",
+    "gulp-react": "^3.0.1",
+    "gulp-uglify": "^1.1.0"
+  }
+}
