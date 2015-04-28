@@ -1,13 +1,14 @@
 var gulp = require('gulp');
 var react = require('gulp-react');
 var direact = require('gulp-direact');
+var prettify = require('gulp-prettify');
 
 var path = {
-   HTML: 'src/index.html',
    ALL: ['src/js/*.js', 'src/js/**/*.js', 'src/index.html'],
+   HTML: 'src/index.html',
+   DEST_HTML: 'dist',
    JS: ['src/js/*.js', 'src/js/**/*.js'],
-   DEST_JS: 'dist/js',
-   DEST: 'dist'
+   DEST_JS: 'dist/js'
 };
 
 gulp.task('transformJS', function(){
@@ -19,7 +20,8 @@ gulp.task('transformJS', function(){
 gulp.task('transformHTML', function(){
    gulp.src(path.HTML)
    .pipe(direact())
-   .pipe(gulp.dest(path.DEST));
+   .pipe(prettify())
+   .pipe(gulp.dest(path.DEST_HTML));
 });
 
 gulp.task('watch', function(){

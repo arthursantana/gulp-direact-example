@@ -5,15 +5,16 @@
   "main": "index.html",
   "author": "Arthur Santana <rockslave@gmail.com>",
   "license": "MIT",
-  "repository" : {
-     "type" : "git",
-     "url" : "https://github.com/arthursantana/gulp-direact-example.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthursantana/gulp-direact-example.git"
   },
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
-    "gulp-direact": "^0.0.13",
+    "gulp-direact": "^0.1.0",
     "gulp-html-replace": "^1.4.4",
+    "gulp-prettify": "^0.3.0",
     "gulp-react": "^3.0.1",
     "gulp-uglify": "^1.1.0"
   }
