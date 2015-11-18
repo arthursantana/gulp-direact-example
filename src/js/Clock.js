@@ -14,7 +14,7 @@ var Clock = React.createClass({
    render: function (e) {
       var t = this.state.time;
       var s = {
-         color: this.props.color
+         color: this.props.colorTest
       };
       return (
          <div style={s}>{t.getFullYear()}-{t.getMonth()}-{t.getDay()} {t.getHours()}:{t.getMinutes()}:{t.getSeconds()}</div>
